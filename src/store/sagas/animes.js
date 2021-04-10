@@ -1,4 +1,4 @@
-import { put, call, all } from 'redux-saga/effects';
+import { put, all } from 'redux-saga/effects';
 import axios from '../../axios-animes';
 
 import * as actions from '../actions';
