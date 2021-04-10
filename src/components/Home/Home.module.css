@@ -1,0 +1,29 @@
+.Home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.Enter {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  margin: 0 auto;
+  border: 1px solid white;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background-color: #f8eddb;
+  transition-duration: 200ms;
+  cursor: pointer;
+  color: #2f2f2f;
+}
+
+.Enter:hover {
+  color: #24292e;
+  box-shadow: 0 0 5px 5px #666;
+  background-color: #faf2e4;
+}

@@ -1,0 +1,21 @@
+.Logo {
+  padding: 0.5rem;
+}
+
+.Logo > button {
+  color: #faf2e4;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  transition-duration: 200ms;
+}
+
+.Logo > button:hover {
+  color: white;
+}
+
+.Logo > button:disabled {
+  color: silver;
+}

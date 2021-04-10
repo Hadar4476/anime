@@ -1,0 +1,131 @@
+.SingleAnimePage {
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Top {
+  display: flex;
+  flex-direction: column;
+}
+
+.Image {
+  margin: 0 auto;
+  width: 280px;
+}
+
+.Image > img {
+  width: 100%;
+}
+
+.Name {
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid silver;
+  width: 95%;
+  margin: 0 auto;
+}
+.Name > p {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.Plot {
+  position: relative;
+  padding: 1rem;
+  text-overflow: ellipsis;
+  color: rgb(139, 139, 139);
+  overflow: scroll;
+  max-height: 300px;
+  text-align: left;
+}
+
+.Plot::-webkit-scrollbar {
+  display: none;
+}
+
+.Bottom {
+  margin-top: 0.5rem;
+  border-top: 1px solid silver;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.DateItem,
+.MoreInfoItem {
+  display: flex;
+  align-items: center;
+  color: rgb(211, 211, 211);
+  border-bottom: 1px solid #666;
+  margin-top: 0.25rem;
+}
+
+.InfoData {
+  margin-left: 0.5rem;
+  color: #8c29e4;
+}
+
+@media (min-width: 700px) {
+  .SingleAnimePage {
+    width: 650px;
+  }
+  .Top {
+    flex-direction: row;
+  }
+  .Image {
+    width: 280px;
+    margin: 0 0;
+  }
+  .Info {
+    width: 370px;
+  }
+  .Plot {
+    max-height: 332px;
+  }
+  .Bottom {
+    flex-direction: row;
+  }
+  .MoreInfo {
+    margin-left: 2rem;
+  }
+  .Dates {
+    width: 30%;
+  }
+  .MoreInfo {
+    width: 70%;
+  }
+  .DateItem,
+  .MoreInfoItem {
+    border: none;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .SingleAnimePage {
+    width: 900px;
+  }
+  .Info {
+    width: 70%;
+  }
+  .Name > p {
+    font-size: 1.5rem;
+  }
+  .Plot {
+    max-height: 325px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .Name > p {
+    font-size: 2rem;
+  }
+  .Plot {
+    max-height: 311px;
+  }
+}

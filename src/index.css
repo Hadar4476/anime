@@ -1,3 +1,20 @@
+/* MAIN COLORS */
+
+/* black */
+/* #24292e */
+
+/* purple */
+/* 6314a8 */
+
+/* light purple */
+/* 7518c7 */
+
+/* cream */
+/* faf2e4 */
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* font-family: 'Permanent Marker', cursive; */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +22,27 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(#000000, #2f2f2f);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition-duration: 200ms;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body *::selection {
+  color: white;
+  background-color: #24292e;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+main {
+  min-height: 900px;
 }

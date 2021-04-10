@@ -1,0 +1,14 @@
+.Page404 {
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+}
+
+.Page404 > i {
+  font-size: 4rem;
+  color: red;
+}
+
+.Page404 > h1 {
+  margin-top: 2rem;
+}

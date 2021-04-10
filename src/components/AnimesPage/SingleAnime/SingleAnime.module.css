@@ -1,0 +1,59 @@
+.Box {
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.DarkBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1;
+  border-radius: 0.5rem;
+  transition-duration: 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.DarkBox > i {
+  font-size: 2rem;
+  display: none;
+}
+
+.SingleAnime {
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.Box > p {
+  padding: 0.5rem;
+  color: silver;
+  width: 100%;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition-duration: 200ms;
+}
+
+.SingleAnime:hover > .DarkBox {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.SingleAnime:hover > .DarkBox > i {
+  display: block;
+  color: white;
+}
+
+.SingleAnime:hover ~ p {
+  color: white;
+}
+
+.Image {
+  width: 100%;
+  border-radius: 0.5rem;
+  object-fit: contain;
+  align-self: center;
+}
